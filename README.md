@@ -5,7 +5,7 @@
 [![Travis CI build status](http://travis-ci.org/sgorsten/linalg.svg)](https://travis-ci.org/sgorsten/linalg)
 [![Appveyor build status](http://ci.appveyor.com/api/projects/status/l4bfv5omodkajuc9?svg=true)](https://ci.appveyor.com/project/sgorsten/linalg)
 
-[`linalg.h`](/linalg.h) is a [single header](http://github.com/nothings/stb/blob/master/docs/other_libs.md), [public domain](http://unlicense.org/), [short vector math](http://www.reedbeta.com/blog/on-vector-math-libraries/) library for [C++](http://en.cppreference.com/w/). It is inspired by the syntax of popular shading and compute languages and is intended to serve as a lightweight alternative to projects such as [GLM](http://glm.g-truc.net/0.9.7/), [Boost.QVM](https://www.boost.org/doc/libs/1_66_0/libs/qvm/doc/index.html) or [Eigen](http://eigen.tuxfamily.org/) in domains such as computer graphics, computational geometry, and physical simulation. It allows you to easily write programs like the following:
+[`linalg.h`](/linalg.h) is a [single header](http://github.com/nothings/stb/blob/master/docs/other_libs.md), [public domain](http://unlicense.org/), [short vector math](http://www.reedbeta.com/blog/on-vector-math-libraries/) library for [C++](http://en.cppreference.com/w/), by [Sterling Orsten](https://github.com/sgorsten). It is inspired by the syntax of popular shading and compute languages and is intended to serve as a lightweight alternative to projects such as [GLM](http://glm.g-truc.net/0.9.7/), [Boost.QVM](https://www.boost.org/doc/libs/1_66_0/libs/qvm/doc/index.html) or [Eigen](http://eigen.tuxfamily.org/) in domains such as computer graphics, computational geometry, and physical simulation. It allows you to easily write programs like the following:
 
 ```cpp
 #include <linalg.h>
@@ -46,6 +46,19 @@ The documentation for `v2.2` is still in progress.
   * [User-defined conversions](#user-defined-conversions)
 * [Higher order functions](#higher-order-functions)
 * [Changes from v2.1](#changes-from-v21)
+
+## Installation
+
+Run:
+```bash
+$ npm i linalg.cxx
+```
+
+And then include `linalg.h` as follows:
+```c
+#include "node_modules/linalg.cxx/linalg.h"
+```
+
 
 ## Data structures
 
@@ -480,3 +493,10 @@ It is intended that compatibility will be restored before officially tagging `v2
 * `linalg.h` no longer supports Visual Studio 2013. However, it is known to work on GCC 4.9+, Clang 3.5+ in C++11 mode and Visual Studio 2015+.
 * `vec<T,M>` and `mat<T,M,N>` may only be used with a `T` which is an [arithmetic type](https://en.cppreference.com/w/c/language/arithmetic_types)
   * This requirement will likely be relaxed, but will require specializing some trait type to indicate additional scalar types
+
+<br>
+<br>
+
+
+[![ORG](https://img.shields.io/badge/org-nodef-green?logo=Org)](https://nodef.github.io)
+![](https://ga-beacon.deno.dev/G-RC63DPBH3P:SH3Eq-NoQ9mwgYeHWxu7cw/github.com/nodef/linalg.cxx)

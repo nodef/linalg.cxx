@@ -1,0 +1,3 @@
+samples/
+.travis.yml
+appveyor.yml

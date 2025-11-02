@@ -1,0 +1,15 @@
+{
+  "name": "linalg.cxx",
+  "version": "2.2.0",
+  "description": "linalg.h is a single header, public domain, short vector math library for C++; Sterling Orsten (2016).",
+  "keywords": ["c++", "library", "linear algebra", "math", "vectors"],
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nodef/linalg.cxx.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nodef/linalg.cxx/issues"
+  },
+  "homepage": "https://github.com/nodef/linalg.cxx#readme"
+}
